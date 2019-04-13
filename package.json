@@ -6,6 +6,11 @@
 	"engines": {
 		"vscode": "^1.33.0"
 	},
+	"publisher": "cmstead",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cmstead/articulate-mocha.git"
+	},
 	"categories": [
 		"Other"
 	],
