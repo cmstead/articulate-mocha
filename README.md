@@ -1,65 +1,53 @@
-# articulate-mocha README
+# Articulate Mocha #
+## Test Like You Talk ##
 
-This is the README for your extension "articulate-mocha". After writing up a brief description, we recommend including the following sections.
+Articulate Mocha is the best way to create tests with Mocha and test like you talk. More often than not, we talk in symbols and "wait, no that other thing." The goal, instead, is to make it easier to think less about the code you have to write and more about the test logic you care about.
 
-## Features
+Articulate Mocha supports both the BDD and TDD APIs for the Mocha test framework. Start typing and get the best snippet experience you can get for Mocha test authoring.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Articulate Mocha is an accompanying extension to Articulate JS:
 
-For example if there is an image subfolder under your extension project workspace:
+[https://marketplace.visualstudio.com/items?itemName=cmstead.articulate-js](https://marketplace.visualstudio.com/items?itemName=cmstead.articulate-js)
 
-\!\[feature X\]\(images/feature-x.png\)
+## Installing Articulate JS ##
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open Visual Studio Code1
+2. Open extension sidebar item
+3. Search for `Articulate Mocha`
+4. Click **install** button
+5. Click **reload** to complete installation (as needed)
 
-## Requirements
+## Using Articulate JS ##
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Actions ###
 
-## Extension Settings
+**Surround With**
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Accidentally start writing a test and forget to write your 'it' expression? No worries, we got you.
 
-For example:
+Highlight the code for your test, right click, and select "surround with" you'll get all the same snippet goodness you're used to with less typing.
 
-This extension contributes the following settings:
+### Snippets ###
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+Nearly all of the Mocha test API is covered in just a few simple snippets. Start typing and you'll get it all:
 
-## Known Issues
+- Describe -- Describe/Suite/Context
+- It -- It/Test/Specify
+- Before -- Before/SuiteSetup
+- After -- After/SuiteTeardown
+- BeforeEach -- BeforeEach/Setup
+- AfterEach -- AfterEach/Teardown
+- Pending tests -- It/Test/Specify
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
+## Planned Features ##
 
-Users appreciate release notes as you update your extension.
+- Toggle Only
+- Toggle Skip
+- Toggle Done Parameter
 
-### 1.0.0
+## Version History ##
 
-Initial release of ...
+**v1.0.0**
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+First release

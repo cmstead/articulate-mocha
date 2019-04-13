@@ -10,6 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
+		"onCommand:cmstead.articulate-mocha.surroundWith"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -25,13 +26,33 @@
 			}
 		],
 		"commands": [
+			{
+				"command": "cmstead.articulate-mocha.surroundWith",
+				"title": "Mocha: Surround With",
+				"description": "Surround Selection With Snippet Option"
+			}
 		],
 		"snippets": [
 			{
 				"language": "javascript",
 				"path": "./snippets/articulate-mocha.json"
 			}
-		]
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "cmstead.articulate-mocha.surroundWith",
+					"when": "editorLangId == javascript && editorHasSelection"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "cmstead.articulate-mocha.surroundWith",
+					"group": "4_articulate_mocha",
+					"when": "editorLangId == javascript && editorHasSelection"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",
@@ -43,5 +64,8 @@
 		"eslint": "^5.13.0",
 		"@types/node": "^10.12.21",
 		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"dject": "^1.13.3"
 	}
 }

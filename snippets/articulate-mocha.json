@@ -1,26 +1,26 @@
 {
     "Describe Test Suite": {
-        "prefix": "am-create-describe-suite-context",
+        "prefix": "am-describe-suite-context",
         "body": [
             "${1|describe,suite,context|}(\"${2:Description}\", function(){",
-            "   $0",
+            "   ${TM_SELECTED_TEXT}$0",
             "});"
         ],
         "description": "Create a Describe Test Suite"
     },
     "It Test Block": {
-        "prefix": "am-create-it-test-block",
+        "prefix": "am-it-test-block",
         "body": [
             "${1|it,test,specify|}(\"${2:Expected Behavior}\", ${3|function(),function(done)|}{",
-            "    $0",
+            "    ${TM_SELECTED_TEXT}$0",
             "});"
         ],
         "description": "Create a It Test Block"
     },
     "Pending It Test Block": {
-        "prefix": "am-create-pending-it-test-block",
+        "prefix": "am-pending-it-test-block",
         "body": [
-            "${1|it,test|}(\"${2:Expected Behavior}\");"
+            "${1|it,test,specify|}(\"${2:Expected Behavior}\");"
         ],
         "description": "Create a pending It Test Block"
     },
@@ -28,34 +28,34 @@
         "prefix": "am-add-before-suite-setup-block",
         "body": [
             "${1|before,suiteSetup|}(${2|function(),function(done)|}{",
-            "    $0",
+            "    ${TM_SELECTED_TEXT}$0",
             "});"
         ],
         "description": "Add a before/suiteSetup Block"
     },
     "Before Each Setup": {
-        "prefix": "am-add-beforeEach-setup-block",
+        "prefix": "am-beforeEach-setup-block",
         "body": [
             "${1|beforeEach,setup|}(${2|function(),function(done)|}{",
-            "    $0",
+            "    ${TM_SELECTED_TEXT}$0",
             "});"
         ],
         "description": "Add a beforeEach/setup Block"
     },
     "After Suite Teardown": {
-        "prefix": "am-add-after-suite-teardown",
+        "prefix": "am-after-suite-teardown",
         "body": [
             "${1|after,suiteTeardown|}(function(){",
-            "    $0",
+            "    ${TM_SELECTED_TEXT}$0",
             "});"
         ],
         "description": "Add an after/suiteTeardown block"
     },
     "After Each Teardown": {
-        "prefix": "am-add-afterEach-teardown",
+        "prefix": "am-afterEach-teardown",
         "body": [
             "${1|afterEach,teardown|}(function(){",
-            "    $0",
+            "    ${TM_SELECTED_TEXT}$0",
             "});"
         ],
         "description": "Add an afterEach/teardown block"
